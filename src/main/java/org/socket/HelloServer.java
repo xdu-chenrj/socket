@@ -9,6 +9,7 @@ import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Scanner;
+import java.util.concurrent.*;
 
 
 public class HelloServer {
@@ -16,7 +17,7 @@ public class HelloServer {
 
     public void start(int port) {
         // 创建ServerSocket对象并绑定一个端口
-        try (ServerSocket serverSocket = new ServerSocket(port)){
+        try (ServerSocket serverSocket = new ServerSocket(port)) {
             Socket socket;
             // 通过accept方法监听客户端请求
             while ((socket = serverSocket.accept()) != null) {
@@ -38,20 +39,26 @@ public class HelloServer {
     }
 
     public static void main(String[] args) {
-        Thread threadA = new Thread(() -> {
-            // 创建 socket 连接
+//        Thread threadA = new Thread(() -> {
+//            // 创建 socket 连接
+//            HelloServer helloServer = new HelloServer();
+//            helloServer.start(8888);
+//        });
+//        threadA.setName("threadA");
+//        threadA.start();
+//
+//        Thread threadB = new Thread(() -> {
+//            // 创建 socket 连接
+//            HelloServer helloServer = new HelloServer();
+//            helloServer.start(9999);
+//        });
+//        threadB.setName("threadB");
+//        threadB.start();
+        ThreadFactory threadFactory = Executors.defaultThreadFactory();
+        ExecutorService threadPool = new ThreadPoolExecutor(10, 100, 1, TimeUnit.MINUTES, new ArrayBlockingQueue<>(100), threadFactory);
+        threadPool.execute(() -> {
             HelloServer helloServer = new HelloServer();
             helloServer.start(8888);
         });
-        threadA.setName("threadA");
-        threadA.start();
-
-        Thread threadB = new Thread(() -> {
-            // 创建 socket 连接
-            HelloServer helloServer = new HelloServer();
-            helloServer.start(9999);
-        });
-        threadB.setName("threadB");
-        threadB.start();
     }
 }

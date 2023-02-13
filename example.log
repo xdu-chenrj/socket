@@ -151,3 +151,56 @@ INFO threadA org.socket.HelloServer - server receive clientB
 INFO threadB org.socket.HelloServer - connect success
 INFO threadB org.socket.HelloServer - server receive clientC
 INFO main org.socket.HelloClient - client send message: clientC
+INFO pool-1-thread-1 org.socket.HelloServer - connect success
+INFO main org.socket.HelloClient - client send message: clientA
+INFO pool-1-thread-1 org.socket.HelloServer - server receive clientA
+INFO pool-1-thread-1 org.socket.HelloServer - connect success
+INFO pool-1-thread-1 org.socket.HelloServer - server receive clientB
+INFO main org.socket.HelloClient - client send message: clientB
+ERROR main org.socket.HelloClient - occur exception:
+java.net.ConnectException: 拒绝连接 (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at org.socket.HelloClient.send(HelloClient.java:15)
+	at org.socket.ClientC.main(ClientC.java:6)
+ERROR main org.socket.HelloClient - occur exception:
+java.net.ConnectException: 拒绝连接 (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at org.socket.HelloClient.send(HelloClient.java:15)
+	at org.socket.ClientC.main(ClientC.java:6)
+INFO pool-1-thread-1 org.socket.HelloServer - connect success
+INFO pool-1-thread-1 org.socket.HelloServer - server receive clientC
+INFO main org.socket.HelloClient - client send message: clientC
+INFO main org.socket.HelloClient - client send message: clientC
+INFO main org.socket.HelloClient - client send message: clientB
+INFO main org.socket.HelloClient - client send message: clientA
+INFO pool-1-thread-1 org.socket.HelloServer - connect success
+INFO pool-1-thread-1 org.socket.HelloServer - server receive clientC
+INFO pool-1-thread-1 org.socket.HelloServer - connect success
+INFO pool-1-thread-1 org.socket.HelloServer - server receive clientB
+ERROR main org.socket.HelloClient - occur exception:
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.ObjectInputStream$PeekInputStream.read(ObjectInputStream.java:2663)
+	at java.io.ObjectInputStream$PeekInputStream.readFully(ObjectInputStream.java:2679)
+	at java.io.ObjectInputStream$BlockDataInputStream.readShort(ObjectInputStream.java:3156)
+	at java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:862)
+	at java.io.ObjectInputStream.<init>(ObjectInputStream.java:358)
+	at org.socket.HelloClient.send(HelloClient.java:21)
+	at org.socket.ClientA.main(ClientA.java:8)
