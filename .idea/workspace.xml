@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9e07468-8977-430a-ae22-0dac13453977" name="Changes" comment="&quot;socket network communication first version&quot;">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/socket/HelloClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/socket/HelloServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/socket/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/socket/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/socket/ClientA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/socket/ClientB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/socket/ClientC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/socket/HelloServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/socket/HelloServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,10 +57,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_directory_selection": "/home/chenrj/gitrep/socket/src/test/java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -72,7 +70,46 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.HelloClient">
+  <component name="RunManager" selected="Application.ClientC">
+    <configuration name="ClientA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.socket.ClientA" />
+      <module name="socket" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.socket.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.socket.ClientB" />
+      <module name="socket" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.socket.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.socket.ClientC" />
+      <module name="socket" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.socket.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HelloClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.socket.HelloClient" />
       <module name="socket" />
@@ -101,8 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HelloClient" />
+        <item itemvalue="Application.ClientC" />
+        <item itemvalue="Application.ClientB" />
+        <item itemvalue="Application.ClientA" />
         <item itemvalue="Application.HelloServer" />
+        <item itemvalue="Application.HelloClient" />
       </list>
     </recent_temporary>
   </component>
@@ -114,8 +154,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676015802492</updated>
-      <workItem from="1676015803528" duration="8859000" />
+      <workItem from="1676015803528" duration="9051000" />
+      <workItem from="1676253952468" duration="611000" />
+      <workItem from="1676257790874" duration="1815000" />
     </task>
+    <task id="LOCAL-00001" summary="&quot;socket network communication first version&quot;">
+      <created>1676037645530</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676037645530</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

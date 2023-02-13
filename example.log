@@ -1,0 +1,153 @@
+INFO main org.socket.HelloServer - connect success
+ERROR main org.socket.HelloClient - occur exception:
+java.io.NotSerializableException: org.socket.Message
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1184)
+	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:348)
+	at org.socket.HelloClient.send(HelloClient.java:19)
+	at org.socket.HelloClient.main(HelloClient.java:32)
+ERROR main org.socket.HelloServer - occur exception 
+java.io.WriteAbortedException: writing aborted; java.io.NotSerializableException: org.socket.Message
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1577)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:431)
+	at org.socket.HelloServer.start(HelloServer.java:25)
+	at org.socket.HelloServer.main(HelloServer.java:40)
+Caused by: java.io.NotSerializableException: org.socket.Message
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1184)
+	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:348)
+	at org.socket.HelloClient.send(HelloClient.java:19)
+	at org.socket.HelloClient.main(HelloClient.java:32)
+INFO main org.socket.HelloServer - connect success
+INFO main org.socket.HelloClient - client send message: hello
+INFO main org.socket.HelloServer - server receive hello
+INFO main org.socket.HelloServer - connect success
+INFO main org.socket.HelloServer - server receive hello
+INFO main org.socket.HelloClient - client send message: hello
+INFO main org.socket.HelloServer - connect success
+INFO main org.socket.HelloClient - client send message: hello
+INFO main org.socket.HelloServer - server receive hello
+ERROR hello server 8889 org.socket.HelloServer - occur exception 
+java.net.BindException: 地址已在使用 (Bind failed)
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:128)
+	at org.socket.HelloServer.start(HelloServer.java:19)
+	at org.socket.HelloServer.lambda$main$1(HelloServer.java:50)
+	at java.lang.Thread.run(Thread.java:748)
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 9999 org.socket.HelloServer - connect success
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 9999 org.socket.HelloServer - server receive hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 9999 org.socket.HelloServer - connect success
+INFO hello server 9999 org.socket.HelloServer - server receive hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO main org.socket.HelloClient - client send message: hello
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO main org.socket.HelloClient - client send message: hello
+INFO hello server 8888 org.socket.HelloServer - connect success
+INFO hello server 8888 org.socket.HelloServer - server receive hello
+INFO threadA org.socket.HelloServer - connect success
+INFO main org.socket.HelloClient - client send message: clientA
+INFO threadA org.socket.HelloServer - server receive clientA
+INFO main org.socket.HelloClient - client send message: clientB
+INFO threadA org.socket.HelloServer - connect success
+INFO threadA org.socket.HelloServer - server receive clientB
+INFO main org.socket.HelloClient - client send message: clientB
+ERROR main org.socket.HelloClient - occur exception:
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.ObjectInputStream$PeekInputStream.read(ObjectInputStream.java:2663)
+	at java.io.ObjectInputStream$PeekInputStream.readFully(ObjectInputStream.java:2679)
+	at java.io.ObjectInputStream$BlockDataInputStream.readShort(ObjectInputStream.java:3156)
+	at java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:862)
+	at java.io.ObjectInputStream.<init>(ObjectInputStream.java:358)
+	at org.socket.HelloClient.send(HelloClient.java:21)
+	at org.socket.ClientB.main(ClientB.java:9)
+INFO threadA org.socket.HelloServer - connect success
+INFO main org.socket.HelloClient - client send message: clientA
+INFO threadA org.socket.HelloServer - server receive clientA
+INFO main org.socket.HelloClient - client send message: clientB
+INFO threadA org.socket.HelloServer - connect success
+INFO threadA org.socket.HelloServer - server receive clientB
+INFO threadB org.socket.HelloServer - connect success
+INFO threadB org.socket.HelloServer - server receive clientC
+INFO main org.socket.HelloClient - client send message: clientC

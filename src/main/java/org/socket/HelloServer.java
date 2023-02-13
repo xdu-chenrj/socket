@@ -8,6 +8,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Scanner;
 
 
 public class HelloServer {
@@ -24,9 +25,11 @@ public class HelloServer {
                 Message message = (Message) objectInputStream.readObject();
                 ObjectOutputStream objectOutputStream = new ObjectOutputStream(socket.getOutputStream());
                 logger.info("server receive " + message.getConnect());
-                message.setConnect(message.getConnect() + " world");
+                message.setConnect(message.getConnect() + " hello");
                 objectOutputStream.writeObject(message);
                 objectOutputStream.flush();
+                Scanner scanner = new Scanner(System.in);
+                scanner.next();
             }
 
         } catch (IOException | ClassNotFoundException e) {
@@ -35,12 +38,20 @@ public class HelloServer {
     }
 
     public static void main(String[] args) {
-        Thread thread = new Thread(() -> {
+        Thread threadA = new Thread(() -> {
             // 创建 socket 连接
             HelloServer helloServer = new HelloServer();
             helloServer.start(8888);
         });
-        thread.setName("hello server 8888");
-        thread.start();
+        threadA.setName("threadA");
+        threadA.start();
+
+        Thread threadB = new Thread(() -> {
+            // 创建 socket 连接
+            HelloServer helloServer = new HelloServer();
+            helloServer.start(9999);
+        });
+        threadB.setName("threadB");
+        threadB.start();
     }
 }
