@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9e07468-8977-430a-ae22-0dac13453977" name="Changes" comment="&quot;socket network communication first version&quot;">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example.log" beforeDir="false" afterPath="$PROJECT_DIR$/example.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/socket/ClientC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/socket/ClientC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/socket/HelloServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/socket/HelloServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +151,8 @@
       <updated>1676015802492</updated>
       <workItem from="1676015803528" duration="9051000" />
       <workItem from="1676253952468" duration="611000" />
-      <workItem from="1676257790874" duration="3997000" />
+      <workItem from="1676257790874" duration="4174000" />
+      <workItem from="1676521310359" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;socket network communication first version&quot;">
       <created>1676037645530</created>
