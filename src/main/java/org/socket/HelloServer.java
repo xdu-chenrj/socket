@@ -29,8 +29,6 @@ public class HelloServer {
                 message.setConnect(message.getConnect() + " hello");
                 objectOutputStream.writeObject(message);
                 objectOutputStream.flush();
-                Scanner scanner = new Scanner(System.in);
-                scanner.next();
             }
 
         } catch (IOException | ClassNotFoundException e) {
@@ -39,26 +37,11 @@ public class HelloServer {
     }
 
     public static void main(String[] args) {
-//        Thread threadA = new Thread(() -> {
-//            // 创建 socket 连接
-//            HelloServer helloServer = new HelloServer();
-//            helloServer.start(8888);
-//        });
-//        threadA.setName("threadA");
-//        threadA.start();
-//
-//        Thread threadB = new Thread(() -> {
-//            // 创建 socket 连接
-//            HelloServer helloServer = new HelloServer();
-//            helloServer.start(9999);
-//        });
-//        threadB.setName("threadB");
-//        threadB.start();
-        ThreadFactory threadFactory = Executors.defaultThreadFactory();
-        ExecutorService threadPool = new ThreadPoolExecutor(10, 100, 1, TimeUnit.MINUTES, new ArrayBlockingQueue<>(100), threadFactory);
-        threadPool.execute(() -> {
+        Thread thread = new Thread(() -> {
+            // 创建 socket 连接
             HelloServer helloServer = new HelloServer();
             helloServer.start(8888);
         });
+        thread.start();
     }
 }
